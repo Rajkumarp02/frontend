@@ -9,6 +9,7 @@ import Shipping from "./Shipping";
 import TermsAndConditions from "./TermsAndConditions";
 import ContactUs from "../../Components/Contact/Contact"
 import Footer from "../../Components/Footer/Footer"
+
 const LearnWithUs = () => {
     return (
         <div className="container-fluid">
@@ -30,7 +31,10 @@ const LearnWithUs = () => {
                         <h3 className="text-bg-main w-25 h-100">Learn with Us!</h3>
                     </div>
                 </div>
+                
+
                 <div className="mt-5">
+
                     <PrivacyPolicy />
                 </div>
                 <div className="mt-5">

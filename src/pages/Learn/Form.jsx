@@ -1,16 +1,95 @@
+import { useState } from 'react';
 import './Learn.css';
+import axios from "axios"
+import Razorpay from "razorpay-checkout"
+
+
 const Form = () => {
+
+
+    const [course,setCourse] = useState("")
+    const handleSubmit =async (e)=>{
+        e.preventDefault()
+
+        const data= new FormData()
+
+        data.append("name",document.getElementById("name").value)
+        data.append("email",document.getElementById("email").value)
+        data.append("phone",document.getElementById("phone").value)
+        data.append("coursename",course)
+try{
+        const res = await axios.post("http://localhost:8000/api/v1/order",data,{
+            headers: {
+                'Content-Type': 'application/json'
+              }
+        })
+
+  const rzp =new window.Razorpay({
+    key: 'rzp_test_DqcYOTDOsAyoiv',
+    amount: res.data.orderDetails.amount,
+    currency: 'INR',
+    name: 'Your Company Name',
+    description: 'Course Payment',
+    order_id: res.data.orderDetails.id,
+    handler: function(response) {
+      alert(response.razorpay_payment_id);
+      alert(response.razorpay_order_id);
+      alert(response.razorpay_signature);
+      window.location.href = `/learnwithus`;
+    },
+    // callback_url: "http://localhost:8000/api/v1/paymentVerification",
+    prefill: {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      contact: document.getElementById("phone").value
+    },
+    notes: {
+      address: 'Your Address'
+    },
+    theme: {
+      color: '#3399cc'
+    }
+  });
+
+
+  rzp.open();
+
+    }
+    catch(error)
+    {
+
+        rzp1.on('payment.failed', function (response){
+            alert(response.error.code);
+            alert(response.error.description);
+            alert(response.error.source);
+            alert(response.error.step);
+            alert(response.error.reason);
+            alert(response.error.metadata.order_id);
+            alert(response.error.metadata.payment_id);
+        })
+    };
+    }
+
+
+
+    const handleCourseChange =(e)=>{
+        setCourse(e.target.value)
+       }
+       
     return (
         <div className="container-fluid mt-5">
             <div className="row justify-content-start p-md-5">
                 <div className="col-12 col-md-12 col-lg-8 p-md-4 bg rounded-4 w-50 h-25">
+                    <form onSubmit={handleSubmit}>
                     <div className="mb-3">
+                        
                         <h5 className="text-start text-dark">Full Name</h5>
                         <input
                             name="name"
                             type="text"
                             placeholder="Enter Your Name"
                             className="form-control"
+                            id='name'
                         />
                     </div>
                     <div className="mb-3">
@@ -20,6 +99,7 @@ const Form = () => {
                             type="email"
                             placeholder="Enter Your Email"
                             className="form-control"
+                            id='email'
                         />
                     </div>
                     <div className="mb-3">
@@ -29,6 +109,7 @@ const Form = () => {
                             type="tel"
                             placeholder="Enter Your Phone Number"
                             className="form-control"
+                            id='phone'
                         />
                     </div>
                     <div className="mb-3">
@@ -41,6 +122,8 @@ const Form = () => {
                                         type="radio"
                                         name="interest"
                                         id="fullStack"
+                                        value='Full Stack Development'
+                                        onChange={handleCourseChange}
                                     />
                                     <label
                                         className="form-check-label text-dark"
@@ -57,6 +140,8 @@ const Form = () => {
                                         type="radio"
                                         name="interest"
                                         id="digitalMarketing"
+                                        value='Digital Marketing'
+                                        onChange={handleCourseChange}
                                     />
                                     <label
                                         className="form-check-label text-dark"
@@ -73,6 +158,8 @@ const Form = () => {
                                         type="radio"
                                         name="interest"
                                         id="uiUx"
+                                        value='UI/UX Designing'
+                                        onChange={handleCourseChange}
                                     />
                                     <label
                                         className="form-check-label text-dark"
@@ -89,6 +176,8 @@ const Form = () => {
                                         type="radio"
                                         name="interest"
                                         id="graphicDesign"
+                                        value='Graphic Designning'
+                                        onChange={handleCourseChange}
                                     />
                                     <label
                                         className="form-check-label text-dark"
@@ -113,6 +202,7 @@ const Form = () => {
                             background:"#70BF29"
                          }}>Submit Now</button>  
                     </div>
+                    </form>
                 </div>
             </div>
         </div>

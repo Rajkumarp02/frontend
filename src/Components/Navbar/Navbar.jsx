@@ -71,11 +71,11 @@ const NavbarComponent = () => {
                         <li className="nav-item">
                             <NavLink to="/contactus" className="nav-link mx-3" activeClassName="active" aria-current="page" onClick={handleNavItemClick}>Contact Us</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <button className="btn link-2 text-white w-100" style={{ background: "#70BF29", borderRadius: "50px" }}>
                                 <Link to="/contactus" style={{ textDecoration: "none", color: "white" }} onClick={handleNavItemClick}>Get Started</Link>
                             </button>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

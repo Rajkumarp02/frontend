@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomeAbt from "../../Assests/Home/Home-abt.jpg"
 import "./Home.css";
 const HomeAbout  = () => {
@@ -25,7 +26,9 @@ const HomeAbout  = () => {
             </p>
         </div>
         <div>
-            <button className="btn text-center text-md-start" style={{ borderRadius: "50px",color:"#70BF29",borderColor:"#70BF29",border:"2px solid",fontSize:"18px",fontWeight:"600" }}>Discover More</button>
+          <Link to="/aboutus">
+          <button className="btn text-center text-md-start" style={{ borderRadius: "50px",color:"#70BF29",borderColor:"#70BF29",border:"2px solid",fontSize:"18px",fontWeight:"600" }}>Discover More</button>
+          </Link>
         </div>
       </div>
     </div>

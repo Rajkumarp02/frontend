@@ -10,6 +10,7 @@ import TermsAndConditions from "./TermsAndConditions";
 import ContactUs from "../../Components/Contact/Contact"
 import Footer from "../../Components/Footer/Footer"
 import '../../pages/OurService/OurService.css';
+import "./Learn.css"
 const LearnWithUs = () => {
     return (
         <div className="container-fluid">

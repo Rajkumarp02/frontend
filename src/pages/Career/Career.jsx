@@ -16,10 +16,11 @@ const Career = () => {
                         <h5>Home / Career</h5>
                     </div>
                 </div>
-            </div>
-            <div className="mt-5">
-                <Form />
-            </div>
+            <div className="bg-c container-fluid">
+                <div className="col-12 col-md-7">
+                        <Form />
+                    </div>
+        </div>
             <div className="mt-5">
                 <Contact />
             </div>
@@ -27,6 +28,7 @@ const Career = () => {
                 <Footer />
             </div>
         </div>
+         </div>
     );
 };
 

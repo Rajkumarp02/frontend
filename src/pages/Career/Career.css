@@ -1,4 +1,20 @@
 
 .bg-career{
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background: url("../../Assests/career/form-bg.png");
+}
+.bg-c{
+    background: url("../../Assests/career/bg-career.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width : 768px) {
+    .bg-c{
+        background: url("../../Assests/career/bg-career.png");
+        background-position:unset;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     
 }

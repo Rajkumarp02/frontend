@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 import "./Home.css";
@@ -21,8 +22,10 @@ const Home  = () => {
               <h4 className="mt-5 fs-3 py-3 text-start fs-bold animate__animated animate__backInRight">One-stop solution for all your digital needs</h4>
               </div>
               <div className="mt-3">
-                <button className="btn" style={{ borderRadius: "50px",color:"#70BF29",borderColor:"#70BF29",border:"4px solid" }}>Discover more</button>
-              </div>
+              <Link to="/aboutus">
+          <button className="btn text-center text-md-start" style={{ borderRadius: "50px",color:"#70BF29",borderColor:"#70BF29",border:"2px solid",fontSize:"18px",fontWeight:"600" }}>Discover More</button>
+          </Link>
+               </div>
            </div>
        </div>
       </div>
@@ -38,7 +41,7 @@ const Home  = () => {
        <div className="mt-5">
          <Service/>
        </div>
-        <div className="mt-5">
+        <div className="mt-5 mt-md-0">
          <Testmonials/>
        </div>
        <div className="mt-5">

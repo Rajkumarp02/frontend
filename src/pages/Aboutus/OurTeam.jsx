@@ -12,7 +12,7 @@ const OurTeam = () => {
                     fontWeight: "500",
                     fontSize: "18px",
                     lineHeight: "32px",
-                }}>MEET OUT TEAM</h5>
+                }}>MEET OUR TEAM</h5>
                 <h5 className="description">Explore the Talented Individuals Who Make Our Mission Possible</h5>
             </div>
             <div className="row p-3">

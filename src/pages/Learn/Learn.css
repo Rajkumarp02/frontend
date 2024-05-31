@@ -27,3 +27,12 @@ line-height: 24px;
 text-align: left;
 color: #70BF29;
 }
+
+@media (max-width : 768px) {
+    .bg-main{
+        background: url("../../Assests/learn/bg-learn.jpg");
+        background-position:0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

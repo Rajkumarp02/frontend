@@ -3,7 +3,7 @@ const Form = () => {
     return (
         <div className="container-fluid mt-5">
             <div className="row justify-content-start p-3 p-md-5">
-                <div className="col-12 col-md-10 col-lg-8 p-4 bg rounded-4">
+                <div className="col-12 col-md-12 col-lg-8 p-4 bg rounded-4">
                     <div className="mb-3">
                         <h5 className="text-start text-dark">Full Name</h5>
                         <input
@@ -100,11 +100,17 @@ const Form = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='d-flex align-items-center mt-4'>
-                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <label className="form-check-label text-2 fs-5 mx-2 mt-2" htmlFor="flexCheckDefault">
-                            I agree to the Terms and Conditions
-                        </label>
+                    <div className="row mb-3">
+                        <div className="col-12">
+                            <div className='d-flex'>
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <div className='mx-1'>
+                                    <label className="form-check-label text-2" htmlFor="flexCheckDefault">
+                                        I agree to the Terms and Conditions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className='text-center d-flex justify-content-center align-items-center mt-4'>
                         <button className='btn rounded-3 px-4 py-2 text-dark border-1' style={{ background: "#70BF29" }}>

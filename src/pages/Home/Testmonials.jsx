@@ -57,8 +57,8 @@ const Testimonials = () => {
     ];
 
     return (
-        <div className="row mt-3">
-            <div className="col-md-12 bg-Test p-5">
+        <div className="row mt-0">
+            <div className="col-md-12 bg-Test px-5 py-5">
                 <div className="container-fluid">
                     <div className="p-md-5 text-md-center text-center">
                         <h5 className="section-subtitle">TESTIMONIALS</h5>

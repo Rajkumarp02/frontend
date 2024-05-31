@@ -14,7 +14,7 @@ const Contact = () => {
                 <div className="col-lg-6 mb-5 mb-lg-0">
                     <h5 className="text-start" style={{ fontWeight: "500", fontSize: "16px", lineHeight: "24px", color: "#70BF29" }}>Send us a message</h5>
                     <div className="d-flex mt-3 align-items-start">
-                        <RiMapPin2Fill size={40} color="#70BF29" className="me-3" />
+                        <RiMapPin2Fill size={30} color="#70BF29" className="me-3" />
                         <p className="mb-0" style={{ fontWeight: "400", fontSize: "14px", lineHeight: "24px", color: "#000000" }}>
                             No: 2/3 Hurryep Technologies, Uchaparambumedu Rd,<br />
                             Iyer Bungalow, Madurai, Tamil Nadu 625017

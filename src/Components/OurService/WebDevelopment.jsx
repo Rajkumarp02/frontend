@@ -16,7 +16,7 @@ const WebDevelopment = () => {
                     </div>
                 </div>
             </div>
-            <div className="animate__animated animate__fadeInDownBig">
+            <div className="">
             <Web />
            </div>
         

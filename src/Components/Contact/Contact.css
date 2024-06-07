@@ -1,0 +1,76 @@
+
+.contact{
+ background: url("../../Assests/contact/contact.jpg");
+ background-position:right;
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+
+
+.text-main{
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  width: 60%;
+}
+
+.bg{
+  background-image: url("../../Assests/contact/bg.jpg");
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+@media (max-width:767px) {
+  .bg{
+      background-image: url("../../Assests/contact/bg.jpg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size:cover;
+  }
+}
+@media (max-width:768px) {
+  .text-main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    width: 75%;
+  }
+}
+ 
+@media (max-width:567px) {
+  .text-main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.box-bg{
+    background-color:rgba(71, 71, 71, 1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px,
+    rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+::placeholder {
+    color: red;
+    opacity: 1;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: red;
+  }
+
+  .contact-text{
+   font-weight: 500;
+   font-size: 54px;
+   line-height: 32px;
+  }
+
+  @media (max-width:567px){
+    .contact-text{
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 32px;
+     }
+  }

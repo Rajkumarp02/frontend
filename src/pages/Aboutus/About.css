@@ -1,5 +1,13 @@
-.img {
-    background-image: url("../../Assests/Home/Homebg.png");
+.abt {
+    background-image: url("../../Assests/Home/aboutbg.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-small {
+    font-size: 18px;
+    color: rgba(132, 132, 132, 1);
 }
 
 .bg-workflow {
@@ -10,7 +18,28 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px,
         rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+.text-abts{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 60%;
+}
+@media (max-width:768px) {
+    .text-abts{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      text-align: center;
+      width: 75%;
+    }
+  }
 
+  @media (max-width:567px) {
+    .text-abts{
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      width: 80%;
+    }
+  }
+  
 .description {
     font-weight: 600;
     font-size: 32px;
@@ -19,13 +48,14 @@
 }
 
 .para {
-font-family: Poppins;
-font-size: 18px;
-font-weight: 500;
-line-height: 32px;
-text-align: left;
-color: #8C8D8B;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: #8C8D8B;
 }
+
 .mission-img {
     width: 100%;
     height: auto;
@@ -49,6 +79,7 @@ color: #8C8D8B;
         color: #8C8D8B;
     }
 }
+
 @media (max-width: 768px) {
     .mission-img {
         max-height: 50vh;
@@ -58,5 +89,14 @@ color: #8C8D8B;
 @media (max-width: 576px) {
     .mission-img {
         max-height: 40vh;
+    }
+}
+
+@media (max-width:769px) {
+    .abt {
+        background-image: url("../../Assests/Home/aboutbg.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
     }
 }

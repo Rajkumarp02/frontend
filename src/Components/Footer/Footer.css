@@ -1,0 +1,17 @@
+.line{
+    border-right: 1px solid #70BF29;
+}
+
+.text-head{
+    font-size: 22.02px;
+    font-family: "Poppins";
+    line-height: 22px;
+    color: #70BF29;
+    font-weight:bold;
+}
+
+@media (max-width:600px){
+    .line{
+        border-bottom: 1px solid #70BF29;
+    }    
+  }

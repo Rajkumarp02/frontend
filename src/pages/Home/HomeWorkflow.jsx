@@ -1,17 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import research from "../../Assests/Home/research.png";
-import design from "../../Assests/Home/develop.png";
-import development from "../../Assests/Home/deploy.png";
-import deployment from "../../Assests/Home/deployment.jpg";
-import maintenance from "../../Assests/Home/maintance.png";
+// import research from "../../Assests/Home/research.png";
+// import design from "../../Assests/Home/develop.png";
+// import development from "../../Assests/Home/deploy.png";
+// import deployment from "../../Assests/Home/deployment.jpg";
+// import maintenance from "../../Assests/Home/maintance.png";
 import "../../pages/OurService/OurService.css";
+import bg from "../../Assests/Home/bg-set.jpg"
 
 const HomeWorkflow = () => {
   return (
     <div className="row">
-      <div className="col-12 bg-workflow">
-        <div className="p-md-5 mt-3 mt-md-1 text-center">
+      <div className="col-12">
+        <img src={bg} alt='' className='w-100 responsive-img'/>
+        {/* <div className="p-md-5 mt-3 mt-md-1 text-center">
           <p className="text-service">Dynamic Workflow Ensemble</p>
           <h5 className="service-team">
             Seamlessly integrating technology and teamwork, maximizes efficiency and precision for unparalleled results
@@ -37,7 +39,7 @@ const HomeWorkflow = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

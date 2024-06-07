@@ -19,7 +19,6 @@ import Cookies from "./Cookies";
 const Terms  = () => {
   return (
     <div className="container-fluid">
-        <NavbarComponent/>
     <div className="row">
   <div className="col-12 img">
      <div className="p-5 text-md-start mt-5 text-white" style={{

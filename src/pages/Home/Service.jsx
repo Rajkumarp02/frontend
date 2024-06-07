@@ -47,7 +47,7 @@ const Service = () => {
 
   return (
     <div className="row">
-      <div className="col-md-12 bg-workflow p-5">
+      <div className="col-md-12  p-5">
         <>
           <Slider {...settings}>
             {slidesContent.map((slide, slideIndex) => (

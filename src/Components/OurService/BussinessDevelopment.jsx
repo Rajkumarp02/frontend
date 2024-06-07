@@ -2,7 +2,6 @@ import BusinessDevelopment from "../../pages/OurService/BusinessDevelopment";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
-
 const BussinessDevelopment = () => {
   return (
     <div className="container-fluid">
@@ -18,7 +17,7 @@ const BussinessDevelopment = () => {
           </div>
         </div>
       </div>
-      <div className="animate__animated animate__fadeInDownBig">
+      <div className="">
       <BusinessDevelopment />
       </div>
       <div className="mt-5">

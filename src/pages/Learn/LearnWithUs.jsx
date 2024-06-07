@@ -15,7 +15,7 @@ const LearnWithUs = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-12 img">
+                {/* <div className="col-12 img">
                     <div className="p-5 text-md-start mt-5 text-white" style={{
                         fontWeight: "500",
                         fontSize: "18px",
@@ -24,15 +24,13 @@ const LearnWithUs = () => {
                     }}>
                         <h5>Home / Learn with Us</h5>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="bg-main container-fluid">
                 <div className="col-12 col-md-7">
+                    
                         <Form />
                     </div>
-            <div className=" d-flex justify-content-center align-items-center justify-content-md-end align-items-md-end ">
-            <h3 className="text-bg-main d-flex align-items-end">Learn with Us!</h3>
-            </div>
         </div>
                 <div className="mt-5">
                     <PrivacyPolicy />

@@ -2,6 +2,7 @@ import "./Home.css";
 import BDE from "../../Assests/Home/BDE-modified.png";
 import BC from "../../Assests/Home/BC-modified.png";
 import { useNavigate } from "react-router-dom";
+import ServiceCard from "./ServiceCard";
 
 const HomeOurService = () => {
     const nav = useNavigate();
@@ -16,15 +17,15 @@ const HomeOurService = () => {
     return (
         <div className="container-fluid">
             <div className="p-md-5 text-center">
-                <h5 className="" style={{
+                <h5 className="fw-semibold text-white" style={{
                     fontWeight: "500",
-                    fontSize: "18px",
+                    fontSize: "54px",
                     lineHeight: "32px",
                 }}>OUR SERVICES</h5>
-                <h5 className="text-service">Explore our tailored services for an elevated experience.</h5>
+                <h5 className="text-service mt-5">Explore our tailored services for an elevated experience.</h5>
             </div>
-
-            <div className="p-md-5 container-fluid">
+            <ServiceCard/>
+            {/* <div className="p-md-5 container-fluid">
                 <div className="row g-4">
                     <div className="col-md-6">
                         <div className="row mb-4">
@@ -61,9 +62,10 @@ const HomeOurService = () => {
                             </button>
                         </div>
                     </div>
+                </div> 
                 </div>
+                */}
             </div>
-        </div>
     );
 };
 

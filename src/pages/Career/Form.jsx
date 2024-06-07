@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Career.css";
 const Form = () => {
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const form = event.target;
+        if (!form.flexCheckDefault.checked) {
+            setResult("You must agree to the terms and conditions.");
+            return;
+        }
+        setResult("Sending....");
+        const formData = new FormData(form);
+        formData.append("access_key", "2b28fc16-8cfa-4481-b241-905b4a9eb99c");
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+                headers: {},
+            });
+            const data = await response.json();
+            if (data.success) {
+                setResult("Form Submitted Successfully");
+                form.reset();
+            } else {
+                console.log("Error", data);
+                setResult(data.message);
+            }
+        } catch (error) {
+            console.error("Error submitting form", error);
+            setResult("There was an error submitting the form. Please try again later.");
+        }
+    };
     return (
-        <div className="container mt-5 mb-3  d-flex justify-content-center align-items-center mx-md-5 mx-lg-0 mx-0">
+        <div className="container mb-2 mt-2 d-flex justify-content-center align-items-center mx-md-5 mx-lg-0 mx-0">
             <div className="row">
-                <div className="col-12 col-md-12 col-lg-8 p-4 bg-career rounded">
+                <form onSubmit={(e) => onSubmit(e)} className="col-12 col-md-12 col-lg-12 p-4 bg-career rounded">
                     <div className=" d-flex justify-content-center align-items-center ">
                         <h3 className="text-bg-main text-white">Career Enquiry Form</h3>
                     </div>
@@ -16,6 +47,7 @@ const Form = () => {
                                 type="text"
                                 placeholder="Enter Your Name"
                                 className="form-control"
+                                required
                             />
                         </div>
                         <div className="col-12 col-md-6">
@@ -25,6 +57,7 @@ const Form = () => {
                                 type="email"
                                 placeholder="Enter Your Email"
                                 className="form-control"
+                                required
                             />
                         </div>
                     </div>
@@ -36,6 +69,7 @@ const Form = () => {
                                 type="tel"
                                 placeholder="Enter Your Phone Number"
                                 className="form-control"
+                                required
                             />
                         </div>
                         <div className="col-12 col-md-6">
@@ -44,6 +78,7 @@ const Form = () => {
                                 name="dob"
                                 type="date"
                                 className="form-control"
+                                required
                             />
                         </div>
                     </div>
@@ -76,6 +111,7 @@ const Form = () => {
                                 type="text"
                                 placeholder="Enter Your Qualification"
                                 className="form-control"
+                                required
                             />
                         </div>
                         <div className="col-12 col-md-6">
@@ -97,6 +133,7 @@ const Form = () => {
                                 type="text"
                                 placeholder="Enter Your District"
                                 className="form-control"
+                                required
                             />
                         </div>
                         <div className="col-12 col-md-6">
@@ -118,21 +155,22 @@ const Form = () => {
                                 <option value="no">No</option>
                             </select>
                         </div>
-                        <div className="col-12 col-md-6">
+                        {/* <div className="col-12 col-md-6">
                             <h5 className="text-start text-white">Upload File</h5>
                             <input
                                 name="file"
                                 type="file"
                                 className="form-control"
+                                required
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row mb-3">
                         <div className="col-12">
                             <div className='d-flex'>
                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 <div className='mx-1'>
-                                    <label className="form-check-label text-white" htmlFor="flexCheckDefault">
+                                    <label className="form-check-label text-white" htmlFor="flexCheckDefault" required>
                                         I agree to the Terms and Conditions
                                     </label>
                                 </div>
@@ -142,7 +180,10 @@ const Form = () => {
                     <div className='text-center d-flex justify-content-center align-items-center mt-5'>
                         <button className='btn rounded-3 px-2 py-2 text-white border border-1' style={{ background: "#70BF29" }}>Submit Now</button>
                     </div>
-                </div>
+                    <div className="text-center mt-3 text-white fs-5">
+                        {result && <p>{result}</p>}
+                    </div>
+                </form>
             </div>
         </div>
     );

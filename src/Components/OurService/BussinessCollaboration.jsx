@@ -1,6 +1,7 @@
 import Footer from "../Footer/Footer";
 import BEC from "../../pages/OurService/BusinessCollaborations"
 import Contact from "../Contact/Contact";
+import 'animate.css';
 
 const BussinessCollaboration = () => {
   return (
@@ -17,7 +18,7 @@ const BussinessCollaboration = () => {
           </div>
         </div>
       </div>
-      <div className="animate__animated animate__fadeInDownBig">
+      <div className="">
       <BEC />
       </div>
       <div className="mt-5">

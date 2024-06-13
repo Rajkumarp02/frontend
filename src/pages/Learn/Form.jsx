@@ -73,15 +73,11 @@ const Form = () => {
     }
 
     return (
-        <div className="container-fluid mt-5 mt-md-0">
-            <div className="row justify-content-start p-md-4">
-            <div className=" d-flex justify-content-start align-items-start">
-            <h3 className="text-bg-main d-flex align-items-end">Learn with Us!</h3>
-            </div>
-                <div className="col-12 col-md-12 col-lg-8 p-md-4 bg rounded-4">
-                    <form onSubmit={(e) => handleSubmit(e)}>
+        <div className="container-fluid mt-5 mt-md-5">
+            <div className="row justify-content-start">
+                <div className="col-12 col-md-12 col-lg-8 p-md-3 bg mt-3 rounded-4 mx-auto py-5">
+                    <form onSubmit={(e) => handleSubmit(e)} className=''>
                         <div className="mb-3">
-
                             <h5 className="text-start text-dark">Full Name</h5>
                             <input
                                 name="name"

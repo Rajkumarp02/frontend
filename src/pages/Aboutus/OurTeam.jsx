@@ -12,13 +12,19 @@ import S from "../../Assests/Abouts/S.jpg";
 import D from "../../Assests/Abouts/D.jpg";
 import J from "../../Assests/Abouts/J.jpg";
 import Re from "../../Assests/Abouts/Re.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const OurTeam = () => {
   return (
     <div className="container-fluid">
       <div className="p-md-5 text-center">
+        <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
         <h5 className="fw-semibold text-white text-testimonials">MEET OUR TEAM</h5>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn='bounceInRight'
+  animateOut='bounceOutLeft'>
         <h5 className="description mt-4">Explore the Talented Individuals Who Make Our Mission Possible</h5>
+        </ScrollAnimation>
       </div>
       <div className="row p-3">
         {[

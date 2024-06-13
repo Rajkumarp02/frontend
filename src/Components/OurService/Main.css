@@ -1,0 +1,24 @@
+.bg-bd {
+    background-image: url("../../Assests/Ourservice/bg-bd.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@media (max-width:600px) {
+    .bg-bd{
+        background-image: url("../../Assests/Ourservice/bg-bd.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+  }
+
+  @media (max-width:768px) {
+    .bg-bd{
+        background-image: url("../../Assests/Ourservice/bg-bd.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+  }
+

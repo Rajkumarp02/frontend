@@ -33,10 +33,10 @@ const Form = () => {
         }
     };
     return (
-        <div className="container mb-2 mt-2 d-flex justify-content-center align-items-center mx-md-5 mx-lg-0 mx-0">
-            <div className="row">
-                <form onSubmit={(e) => onSubmit(e)} className="col-12 col-md-12 col-lg-12 p-4 bg-career rounded">
-                    <div className=" d-flex justify-content-center align-items-center ">
+        <div className="container d-flex justify-content-center align-items-center mx-md-5 mx-lg-0 mx-0">
+            <div className="row p-md-3 mb-md-3">
+                <form onSubmit={(e) => onSubmit(e)} className="col-12 col-md-12 col-lg-12 p-3 bg-career rounded">
+                    <div className=" d-flex justify-content-center align-items-center">
                         <h3 className="text-bg-main text-white">Career Enquiry Form</h3>
                     </div>
                     <div className="row mb-3">

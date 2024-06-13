@@ -1,22 +1,29 @@
-import swift from "../../../../Assests/Webdesign/5.png"
+import swift from "../../../../Assests/Webdesign/5-u.jpg"
 const Swift  = () => {
   return (
-    <div className="row p-md-5 mt-5 mx-5">
-    <div className="col-md-12 col-lg-6 mb-4 d-flex mt-5 md-mt-0 justify-content-center align-items-center">
-        <img src={swift} alt="discover our story" className="img-fluid rounded-2" />
-    </div>
-    <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
-        <div>
-            <h6 className="text-service text-md-start">Swift Loading Times</h6>
-        </div>
-        <div>
-            <p className="mt-md-3 service-team">
-            Quick Loading Times With our quick-loading site designs, you may experience lightning-fast performance.
-     We carefully consider how fast each component should load in order to maintain user engagement and reduce bounce rates.
-            </p>
-        </div>
-    </div>
-</div>
+    <div className="container-fluid" style={{
+        border: "1px solid",
+        borderRadius: "0px",
+        background: "rgba(112, 191, 41, 0.1)",
+        padding: 0
+    }}>
+      <div className="row no-gutters h-100">
+      <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center p-0" style={{ borderRight: "1px solid" }}>
+          <img src={swift} alt="discover our story" className="w-100 h-100" />
+      </div>
+      <div className="col-md-12 col-lg-6 mt-o mt-md-5 d-flex flex-column justify-content-center p-4 p-md-5 h-100">
+          <div>
+              <h6 className="text-service text-md-start text-center">Swift Loading Times</h6>
+          </div>
+          <div>
+              <p className="mt-md-3 service-team">
+              Quick Loading Times With our quick-loading site designs, you may experience lightning-fast performance.
+               We carefully consider how fast each component should load in order to maintain user engagement and reduce bounce rates.
+               </p>
+          </div>
+      </div>
+  </div>
+  </div>
   );
 };
 

@@ -1,6 +1,7 @@
 // import { FaPhoneAlt } from "react-icons/fa";
 // import { BiLogoGmail } from "react-icons/bi";
 // import { RiMapPin2Fill } from "react-icons/ri";
+import ScrollAnimation from "react-animate-on-scroll";
 import "../../pages/Home/Home.css";
 import "../Contact/Contact.css"
 import { useState } from "react";
@@ -31,11 +32,17 @@ const Contact = () => {
         }
     };
     return (
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-3">
               <div className="text-center mb-4 mt-5">
-                <h5 className="fw-semibold contact-text text-white mt-5">CONTACT US</h5>
+              <ScrollAnimation animateIn='fadeIn'
+  animateOut='fadeOut'>
+    <h5 className="fw-semibold contact-text text-white mt-5">CONTACT US</h5> 
+  </ScrollAnimation>
                </div>
             <div className="row contact p-md-5 rounded">
+            <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
                 <form className="col-lg-5 col-12 p-md-3 mx-lg-5 box-bg rounded" onSubmit={onSubmit}>
                     <div className="mt-3 mt-md-0">
                       <h3 className="text-center text-white fw-medium" style={{fontSize:"32.02px",fontFamily:"Poppins"}}>Get In Touch</h3>
@@ -66,6 +73,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
+        </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import web from "../../../Assests/Webdesign/web.png";
 const Tailored = () => {
   return (
     <div className="container-fluid">
-      <div className="row bg-workflow p-md-5 text-center">
+      <div className="row  p-md-5 text-center"style={{background:"rgba(225, 253, 201, 1)"}}>
         <div className="col-12 mt-3 mt-md-1">
           <h5 className="tailored-title">Tailored Web Design Expertise Crafting Your Unique Online Experience</h5>
         </div>

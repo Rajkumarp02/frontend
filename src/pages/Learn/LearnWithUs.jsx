@@ -26,11 +26,13 @@ const LearnWithUs = () => {
                     </div>
                 </div> */}
 
-                <div className="bg-main container-fluid">
-                <div className="col-12 col-md-7">
-                    
+                <div className="bg-main container-fluid mt-5">
+                <div className="col-12 col-md-7 mt-5">
                         <Form />
                     </div>
+                     <div className=" d-flex justify-content-center align-items-center justify-content-md-end align-items-md-end">
+            <h3 className="text-bg-main d-flex align-items-end mb-4 mt-3 mt-md-0">Learn with Us!</h3>
+            </div>
         </div>
                 <div className="mt-5">
                     <PrivacyPolicy />
@@ -44,18 +46,21 @@ const LearnWithUs = () => {
                 <div className="mt-5">
                     <Payment />
                 </div>
+                <div className="mt-3 rounded-5 p-md-5"style={{background:"rgba(255, 255, 255, 0.1)"}}>
                 <div className="mt-5">
                     <Shipping />
                 </div>
-                <div className="mt-0">
+                <div className="mt-5">
                     <Contact />
                 </div>
-                <div className="mt-0">
+                <div className="mt-5">
                     <TermsAndConditions />
                 </div>
-                <div className="mt-0">
+                <div className="mt-5">
                     <Disclaimer />
                 </div>
+                </div>
+                
                 <div className="mt-5">
                     <ContactUs />
                 </div>

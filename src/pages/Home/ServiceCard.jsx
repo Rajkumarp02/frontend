@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import Slider from 'react-slick';
 import bde from "../../Assests/Home/bde.jpg";
 import Web from "../../Assests/Home/web.jpg";
 import app from "../../Assests/Home/app.jpg";
@@ -7,8 +8,6 @@ import bh from "../../Assests/Home/bh.jpg";
 import wh from "../../Assests/Home/wh.jpg";
 import ah from "../../Assests/Home/ah.png";
 import dh from "../../Assests/Home/dh.jpg";
-import left from "../../Assests/Home/left.png";
-import right from "../../Assests/Home/right.png";
 import seo from "../../Assests/Home/seo.jpg";
 import sh from "../../Assests/Home/sh.png";
 import ssh from "../../Assests/Home/ssh.jpg";
@@ -29,75 +28,112 @@ import bc from "../../Assests/Home/Bc.jpg";
 import bch from "../../Assests/Home/bch.jpg";
 import legal from "../../Assests/Home/legal.jpg";
 import lh from "../../Assests/Home/lh.jpg";
-
+import left from "../../Assests/Home/left.png";
+import right from "../../Assests/Home/right.png";
 import './Home.css';
 
+const services = [
+    { image: bde, alt: "BDE", content: "Content for BDE", hoverImage: bh },
+    { image: Web, alt: "Web Design", content: "Content for Web Design", hoverImage: wh },
+    { image: app, alt: "App Development", content: "Content for App Development", hoverImage: ah },
+    { image: dm, alt: "Digital Marketing", content: "Content for Digital Marketing", hoverImage: dh },
+    { image: sm, alt: "Social Media", content: "Content for Social Media", hoverImage: sh },
+    { image: seo, alt: "SEO", content: "Content for SEO", hoverImage: ssh },
+    { image: ba, alt: "Business Analysis", content: "Content for Business Analysis", hoverImage: bas },
+    { image: aff, alt: "Affiliate Marketing", content: "Content for Affiliate Marketing", hoverImage: afh },
+    { image: em, alt: "Email Marketing", content: "Content for Email Marketing", hoverImage: eh },
+    { image: bah, alt: "Business Analysis", content: "Content for Business Analysis", hoverImage: baah },
+    { image: uiux, alt: "UI/UX Design", content: "Content for UI/UX Design", hoverImage: uh },
+    { image: fa, alt: "Financial Analysis", content: "Content for Financial Analysis", hoverImage: fh },
+    { image: bc, alt: "Blockchain", content: "Content for Blockchain", hoverImage: bch },
+    { image: legal, alt: "Legal Services", content: "Content for Legal Services", hoverImage: lh },
+    { image: app, alt: "App Development", content: "Content for App Development", hoverImage: ah },
+];
+
+export const CustomPrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <button
+            className="custom-arrow custom-prev d-flex justify-content-md-start"
+            style={{ outline: "none", background: "none", border: "none" }}
+            onClick={onClick}
+        >
+            <img src={left} alt="left" className='w-50 h-50' />
+        </button>
+    );
+};
+
+export const CustomNextArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <button
+            className="custom-arrow custom-next d-flex justify-content-md-end"
+            style={{ outline: "none", background: "none", border: "none" }}
+            onClick={onClick}
+        >
+            <img src={right} alt="right" className='w-50 h-50' />
+        </button>
+    );
+};
+
 const ServiceCard = () => {
-    const [startIndex, setStartIndex] = useState(0);
-    const itemsPerPage = 4;
+    const sliderRef = useRef(null);
     const [hoveredImage, setHoveredImage] = useState(null);
 
-    const services = [
-        { image: bde, alt: "BDE", content: "Content for BDE", hoverImage: bh },
-        { image: Web, alt: "Web Design", content: "Content for Web Design", hoverImage: wh },
-        { image: app, alt: "App Development", content: "Content for App Development", hoverImage: ah },
-        { image: dm, alt: "Digital Marketing", content: "Content for Digital Marketing", hoverImage: dh },
-        { image: sm, alt: "sm", content: "Content for SocialMeida", hoverImage: sh },
-        { image: seo, alt: "seo", content: "Content for SEO", hoverImage: ssh },
-        { image: ba, alt: "seo", content: "Content for SocialMeida", hoverImage: bas },
-        { image: aff, alt: "seo", content: "Content for SocialMeida", hoverImage: afh },
-        { image: em, alt: "em", content: "Content for emailmarketing", hoverImage: eh },
-        { image: bah, alt: "seo", content: "Content for SEO", hoverImage: baah},
-        { image: uiux, alt: "seo", content: "Content for SocialMeida", hoverImage: uh },
-        { image: fa, alt: "seo", content: "Content for SocialMeida", hoverImage: fh },
-        { image: bc, alt: "seo", content: "Content for SocialMeida", hoverImage: bch},
-        { image: Web, alt: "seo", content: "Content for SocialMeida", hoverImage: wh },
-        { image: legal, alt: "seo", content: "Content for SocialMeida", hoverImage: lh },
-        { image: app, alt: "seo", content: "Content for SocialMeida", hoverImage: ah },
-    ];
-
-    const nextSlide = () => {
-        const nextIndex = startIndex + itemsPerPage;
-        if (nextIndex < services.length) {
-            setStartIndex(nextIndex);
-        }
-    };
-
-    const prevSlide = () => {
-        const prevIndex = startIndex - itemsPerPage;
-        if (prevIndex >= 0) {
-            setStartIndex(prevIndex);
-        }
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // prevArrow: <CustomPrevArrow />,
+        // nextArrow: <CustomNextArrow />,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
 
     return (
-        <div>
-            <div className=" d-flex justify-content-between">
-                <div className=''>
-               <button style={{ outline: "none", background: "none", border: "none" }} onClick={prevSlide}><img src={left} alt='left' className='w-100 h-100' /></button>
-                </div>
-                <div className=''>
-                    <button className='' style={{ outline: "none", background: "none", border: "none" }} onClick={nextSlide} ><img src={right} alt='right' className='w-100 h-100' /></button>
-                </div>
-            </div>
-
-            <div className="container">
-                <div className="row">
-                    {services.slice(startIndex, startIndex + itemsPerPage).map((service, index) => (
-                        <div key={index} className="col-md-3">
-                            <div className="image-container">
-                                <img
-                                    src={hoveredImage === service.image ? service.hoverImage : service.image}
-                                    alt={service.alt}
-                                    className="w-100 h-100"
-                                    onMouseEnter={() => setHoveredImage(service.image)}
-                                    onMouseLeave={() => setHoveredImage(null)}
-                                />
-                            </div>
+        <div className="slider-container gap-2 p-md-5">
+            <Slider ref={sliderRef} {...settings}>
+                {services.map((service, index) => (
+                    <div key={index} className="p-md-3">
+                        <div className="image-container">
+                            <img
+                                src={hoveredImage === service.image ? service.hoverImage : service.image}
+                                alt={service.alt}
+                                className="w-100 h-100"
+                                onMouseEnter={() => setHoveredImage(service.image)}
+                                onMouseLeave={() => setHoveredImage(null)}
+                            />
                         </div>
-                    ))}
-                </div>
-            </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     );
 };

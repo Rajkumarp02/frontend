@@ -1,29 +1,27 @@
 import "./Home.css";
-import BDE from "../../Assests/Home/BDE-modified.png";
-import BC from "../../Assests/Home/BC-modified.png";
+// import BDE from "../../Assests/Home/BDE-modified.png";
+// import BC from "../../Assests/Home/BC-modified.png";
 import { useNavigate } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
+
 
 const HomeOurService = () => {
     const nav = useNavigate();
 
-    const handle1 = () => {
-        nav("/action1")
-    }
+    // const handle1 = () => {
+    //     nav("/action1")
+    // }
     
-    const handle2 = () => {
-        nav("/action2")
-    }
+    // const handle2 = () => {
+    //     nav("/action2")
+    // }
     return (
         <div className="container-fluid">
             <div className="p-md-5 text-center">
-                <h5 className="fw-semibold text-white" style={{
-                    fontWeight: "500",
-                    fontSize: "54px",
-                    lineHeight: "32px",
-                }}>OUR SERVICES</h5>
-                <h5 className="text-service mt-5">Explore our tailored services for an elevated experience.</h5>
-            </div>
+                <h5 className="fw-semibold text-testimonials text-white">OUR SERVICES</h5>
+          <h5 className="text-service text-center mt-2 mt-md-5">Explore our tailored services for an elevated experience.</h5>
+
+             </div>
             <ServiceCard/>
             {/* <div className="p-md-5 container-fluid">
                 <div className="row g-4">

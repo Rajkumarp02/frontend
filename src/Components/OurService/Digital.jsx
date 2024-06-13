@@ -13,7 +13,6 @@ const Digital  = () => {
             lineHeight: "32px",
             font: "Poppins"
           }}>
-            <h5>Home / DigitalMarketing</h5>
           </div>
         </div>
       </div>

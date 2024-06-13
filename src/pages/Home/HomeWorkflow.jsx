@@ -8,11 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../pages/OurService/OurService.css";
 import bg from "../../Assests/Home/bg-set.jpg"
 
+
 const HomeWorkflow = () => {
   return (
-    <div className="row">
-      <div className="col-12">
-        <img src={bg} alt='' className='w-100 responsive-img'/>
+    <div className="row p-md-3 p-lg-5 p-0">
+      <div className="col-12 p-md-5">
+          <img src={bg} alt='' className='w-100 responsive-img' />
         {/* <div className="p-md-5 mt-3 mt-md-1 text-center">
           <p className="text-service">Dynamic Workflow Ensemble</p>
           <h5 className="service-team">

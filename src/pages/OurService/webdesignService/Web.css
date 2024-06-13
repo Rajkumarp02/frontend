@@ -1,0 +1,36 @@
+.bg-web{
+    background-image: url("../../../Assests/bg-web.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.c-box{
+    border: 3px solid rgba(160, 160, 160, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width:600px) {
+    .bg-web{
+        background-image: url("../../../Assests/bg-web.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+  }
+
+  @media (max-width:768px) {
+    .bg-web{
+        background-image: url("../../../Assests/bg-web.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+  }
+
+  .custom-placeholder::placeholder {
+    color: rgb(172, 171, 171); 
+  }
+  
+.form{
+    font-family: "poppins";
+}

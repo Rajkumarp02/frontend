@@ -1,12 +1,13 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RootLayout from './Components/Navbar/RootLayout';
 import Mission from './pages/Aboutus/Mission';
 import Vision from './pages/Aboutus/Vision';
 import Values from './pages/Aboutus/Values';
-import OurMission from './pages/Aboutus/OurMission';
-import Demo from './Components/Contact/Demo';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const AboutUs = lazy(() => import('./pages/Aboutus/AboutUs'));
@@ -29,8 +30,13 @@ const UIUX = lazy(() => import('./Components/OurService/UIUX'));
 const Privacy = lazy(() => import('./Components/MainTerms/Privacy'));
 const Refund = lazy(() => import('./Components/MainTerms/Refund'));
 const DisClaimer = lazy(() => import('./Components/MainTerms/Disclaimer'));
+const SEO = lazy(()=> import('./pages/OurService/SEOService'));
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="conatiner-fluid">
       <Router>
@@ -55,7 +61,7 @@ function App() {
             <Route path='/action5' element={<Suspense fallback={<div>Loading...</div>}><Digital /></Suspense>} />
             <Route path='/action6' element={<Suspense fallback={<div>Loading...</div>}><WebdesignService /></Suspense>} />
             <Route path='/action7' element={<Suspense fallback={<div>Loading...</div>}><DigitalMarketing /></Suspense>} />
-            <Route path='/learnwithus' element={<Suspense fallback={<div>Loading...</div>}><LearnWithUs /></Suspense>} />
+             <Route path='/learnwithus' element={<Suspense fallback={<div>Loading...</div>}><LearnWithUs /></Suspense>} />
             <Route path='/career' element={<Suspense fallback={<div>Loading...</div>}><Career /></Suspense>} />
             <Route path='/finance' element={<Suspense fallback={<div>Loading...</div>}><Finance /></Suspense>} />
             <Route path='/legal' element={<Suspense fallback={<div>Loading...</div>}><Legal /></Suspense>} />
@@ -65,8 +71,8 @@ function App() {
             <Route path='/privacy' element={<Suspense fallback={<div>Loading...</div>}><Privacy /></Suspense>} />
             <Route path='/refund' element={<Suspense fallback={<div>Loading...</div>}><Refund /></Suspense>} />
             <Route path='/disclaimer' element={<Suspense fallback={<div>Loading...</div>}><DisClaimer /></Suspense>} />
+            <Route path='/seo' element={<Suspense fallback={<div>Loading...</div>}><SEO /></Suspense>} />
           </Route>
-          <Route path='/demo' element={<Demo/>} />
         </Routes>
       </Router>
     </div>

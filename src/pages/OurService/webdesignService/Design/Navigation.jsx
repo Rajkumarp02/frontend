@@ -1,11 +1,17 @@
-import navigation from "../../../../Assests/Webdesign/3.png"
+import navigation from "../../../../Assests/Webdesign/3-u.jpg"
 const Navigation  = () => {
   return (
-    <div className="row p-md-5 mt-5 mx-5">
-    <div className="col-md-12 col-lg-6 mt-5 md-mt-0 mb-4 d-flex justify-content-center align-items-center">
-        <img src={navigation} alt="discover our story" className="img-fluid rounded-2" />
+    <div className="container-fluid" style={{
+      border: "1px solid",
+      borderRadius: "0px",
+      background: "rgba(112, 191, 41, 0.1)",
+      padding: 0
+  }}>
+    <div className="row no-gutters h-100">
+    <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center p-0" style={{ borderRight: "1px solid" }}>
+        <img src={navigation} alt="discover our story" className="w-100 h-100" />
     </div>
-    <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
+    <div className="col-md-12 col-lg-6 mt-o mt-md-5 d-flex flex-column justify-content-center p-4 p-md-5 h-100">
         <div>
             <h6 className="text-service text-md-start">Simple navigation</h6>
         </div>
@@ -15,6 +21,7 @@ const Navigation  = () => {
                </p>
         </div>
     </div>
+</div>
 </div>
   );
 };

@@ -78,7 +78,7 @@ const FAQ = () => {
                     <h6 className="text-service">FAQ</h6>
                 </div>
                 <div className="col-12">
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How does Hurryep Technologies approach SEO differently for businesses in Madurai?</h3>
                             <button className="btn" onClick={isOpen ? handleOut : handleChange}>
@@ -93,7 +93,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">Can social media marketing help my business reach a local audience in Madurai?</h3>
                             <button className="btn" onClick={isOpen1 ? handleOut1 : handleChange1}>
@@ -108,7 +108,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">What is the difference between SEO and SEM?</h3>
                             <button className="btn" onClick={isOpen2 ? handleOut2 : handleChange2}>
@@ -123,7 +123,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How effective is email marketing?</h3>
                             <button className="btn" onClick={isOpen3 ? handleOut3 : handleChange3}>
@@ -138,7 +138,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">What makes Hurryep Technologies different from other digital marketing agencies?</h3>
                             <button className="btn" onClick={isOpen4 ? handleOut4 : handleChange4}>
@@ -153,7 +153,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">Can you help with local SEO for my business in Madurai?</h3>
                             <button className="btn" onClick={isOpen5 ? handleOut5 : handleChange5}>
@@ -169,7 +169,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How do you measure the success of a digital marketing campaign?</h3>
                             <button className="btn" onClick={isOpen6 ? handleOut6 : handleChange6}>
@@ -184,7 +184,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">Do you offer customized digital marketing packages?</h3>
                             <button className="btn" onClick={isOpen7 ? handleOut7 : handleChange7}>
@@ -199,7 +199,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How long does it take to see results from SEO efforts?</h3>
                             <button className="btn" onClick={isOpen8 ? handleOut8 : handleChange8}>

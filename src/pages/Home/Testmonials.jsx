@@ -11,6 +11,7 @@ import mrm from "../../Assests/Home/MRM.png";
 import s2 from "../../Assests/Home/s2.png";
 import rr from "../../Assests/Home/rr.png";
 
+
 const Testimonials = () => {
   var settings = {
     dots: false,
@@ -66,7 +67,7 @@ const Testimonials = () => {
       <div className="col-md-12 px-5 py-5">
         <div className="container-fluid">
           <div className="p-md-5 text-md-center text-center">
-            <h5 className="fw-semibold text-white text-testimonials">
+  <h5 className="fw-semibold text-white text-testimonials">
               TESTIMONIALS
             </h5>
             <h5 className="text-service text-center mt-2 mt-md-5">

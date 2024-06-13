@@ -1,7 +1,7 @@
 const Disclamier  = () => {
   return (
-    <div className="row p-md-5">
-    <div className="col-md-12 mb-4 d-flex flex-column justify-content-md-start align-items-md-start mt-5 p-md-5">
+    <div className="row">
+    <div className="col-md-12 d-flex flex-column justify-content-md-start align-items-md-start mt-5 p-md-5">
     <div>
         <h6 className="text-service text-center text-md-start">Disclaimer</h6>
     </div>
@@ -11,9 +11,9 @@ const Disclamier  = () => {
         If you have any concerns or questions about this disclaimer, please feel free to contact us.
          </p>
     </div>
-    <div className="d-flex justify-content-center justify-content-md-start align-items-center">
+    {/* <div className="d-flex justify-content-center justify-content-md-start align-items-center">
             <button className="btn" style={{ borderRadius: "50px", backgroundColor: "#70BF29", borderColor: "#70BF29", border: "2px", fontSize: "18px", fontWeight: "600", color: 'white' }}>Contact Us</button>
-            </div>
+            </div> */}
     </div>
     </div>
   );

@@ -6,7 +6,7 @@ import OurTeam from "./OurTeam";
 import "./About.css"
 const AboutUs  = () => {
   return (
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-4 mt-md-3">
        <div className="row justify-content-center">
         <div className="col-12 abt img-fluid w-100 h-100 text-center text-md-start mx-5 p-4 mt-5">
           <div className="p-md-5 mx-md-5 mt-md-5 mt-md-0">
@@ -19,7 +19,7 @@ const AboutUs  = () => {
             </div>
             </div>
     </div>
-    <div className="mt-5">
+    <div className="mt-3">
         <AboutDiscover/>
     </div>
     <div className="mt-1">

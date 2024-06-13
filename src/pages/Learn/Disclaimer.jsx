@@ -1,7 +1,7 @@
 const Disclaimer  = () => {
   return (
-    <div className="row p-md-5">
-    <div className="col-md-12 mb-4 d-flex flex-column justify-content-md-start align-items-md-start mt-5 p-md-5">
+    <div className="row">
+    <div className="col-md-12  d-flex flex-column justify-content-md-start align-items-md-start">
     <div>
         <h6 className="text-service text-center text-md-start">Disclaimer</h6>
     </div>

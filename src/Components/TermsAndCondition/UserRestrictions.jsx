@@ -1,8 +1,8 @@
 import Terms from "../../Assests/Ourservice/BDE.png";
 const UserRestrictions  = () => {
   return (
-    <div className="row p-md-5 mt-5 mx-5">
-        <div className="col-md-12 col-lg-6 mb-4 d-flex justify-content-center align-items-center mt-5">
+    <div className="row mx-5">
+        <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <img src={Terms} alt="discover our story" className="img-fluid rounded-2" />
             </div>
             <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
@@ -14,9 +14,9 @@ const UserRestrictions  = () => {
                     Republish material from HURRYEP TECHNOLOGIES. Sell, rent, or sub-license material from HURRYEP TECHNOLOGIES. Reproduce, duplicate, or copy material from HURRYEP TECHNOLOGIES. Redistribute content from HURRYEP TECHNOLOGIES (unless content is specifically made for redistribution).
                     </p>
                 </div>
-                <div className="d-flex justify-content-center justify-content-md-start align-items-center">
+                {/* <div className="d-flex justify-content-center justify-content-md-start align-items-center">
                 <button className="btn" style={{ borderRadius: "50px", backgroundColor: "#70BF29", borderColor: "#70BF29", border: "2px", fontSize: "18px", fontWeight: "600", color: 'white' }}>Discover More</button>
-                </div>
+                </div> */}
             </div>
         </div>
   );

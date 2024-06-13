@@ -56,7 +56,7 @@ const FAQ = () => {
         setOpen6(false);
     }
 
-
+ 
     return (
         <div className="container my-5">
             <div className="row justify-content-center">
@@ -64,7 +64,7 @@ const FAQ = () => {
                     <h6 className="text-service">FAQ</h6>
                 </div>
                 <div className="col-12">
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">What makes your website designing process different from other companies in Madurai?</h3>
                             <button className="btn" onClick={isOpen ? handleOut : handleChange}>
@@ -80,7 +80,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How do you ensure that the websites you create are mobile responsive and optimized for search engines?</h3>
                             <button className="btn" onClick={isOpen1 ? handleOut1 : handleChange1}>
@@ -96,7 +96,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">Can you provide examples of websites you have designed and developed for businesses in Madurai?</h3>
                             <button className="btn" onClick={isOpen2 ? handleOut2 : handleChange2}>
@@ -112,7 +112,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">What steps do you take to ensure the security of the websites you build?</h3>
                             <button className="btn" onClick={isOpen3 ? handleOut3 : handleChange3}>
@@ -128,7 +128,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">Do you offer website maintenance services after the initial development is complete?</h3>
                             <button className="btn" onClick={isOpen4 ? handleOut4 : handleChange4}>
@@ -144,7 +144,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">How do you handle website content creation and do you offer content management services?</h3>
                             <button className="btn" onClick={isOpen5 ? handleOut5 : handleChange5}>
@@ -160,7 +160,7 @@ const FAQ = () => {
                             </div>
                         )}
                     </div>
-                    <div className="border border-1 rounded mb-3">
+                    <div className="border border-1 rounded mb-3 bg-white">
                         <div className="d-flex justify-content-between align-items-center p-3">
                             <h3 className="fq-text">What is your process for incorporating e-commerce functionality into websites for businesses in Madurai?</h3>
                             <button className="btn" onClick={isOpen6 ? handleOut6 : handleChange6}>

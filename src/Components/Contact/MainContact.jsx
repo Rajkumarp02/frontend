@@ -3,10 +3,10 @@ import Contact from "./Contact";
 import "./Contact.css"
 import "../../pages/OurService/OurService.css"
 const MainContact  = () => {
-  return (
-    <div className="container-fluid mt-5">
+  return ( 
+    <div className="container-fluid mt-3 mt-md-2 mt-lg-0">
       <div className="row justify-content-center">
-        <div className="col-12 bg img-fluid w-100 h-100 text-center text-md-start mx-5 p-1 p-lg-5 mt-5">
+        <div className="col-12 bg-contact img-fluid w-100 h-100 text-center text-md-start mx-5 p-1 p-lg-5 mt-5">
           <div className="p-md-5 mx-md-5 mt-3 mt-md-5">
             <h1 className="text-our text-center mx-auto mx-md-0 text-md-start text-dark fw-bold">
             Get in Touch with Us

@@ -8,18 +8,16 @@
 }
 
 .bg-main {
-    background: url("../../Assests/learn/bg-learn.jpg");
+    background: url("../../Assests/learn/b-u.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .text-bg-main {
-    font-family: Poppins;
-    font-size: 40px;
+    font-size: 54px;
     font-weight: bold;
-    line-height: 40px;
-    text-align: start;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.749);
 }
 
 .text-2 {
@@ -36,6 +34,15 @@
         background: url("../../Assests/learn/bg-learn.jpg");
         background-position: 0%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
     }
+}
+@media (max-width : 600px) {
+    .text-bg-main {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.749);
+    }
+    
 }

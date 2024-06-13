@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import styles from './styles.module.css'; // Import your CSS module
+import styles from './styles.module.css';
 
 const Page = ({ offset, gradient, onClick }) => (
   <>

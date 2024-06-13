@@ -1,3 +1,20 @@
-.img {
-    background-image: url("../../Assests/Home/Homebg.png");
+.bg-terms {
+    background-image: url("../../Assests/Terms/bg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@media (max-width:767px) {
+    .bg-terms{
+        background-image: url("../../Assests/Terms/bg.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+  }
+.p-bg{
+    background-image: url("../../Assests/Terms/t1.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
 }

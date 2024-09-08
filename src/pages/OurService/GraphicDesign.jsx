@@ -2,7 +2,7 @@ import GD from "../../Assests/Ourservice/GD.png";
 import './OurService.css';
 const GraphicDesign  = () => {
   return (
-    <div className="row mt-5 mt-md-0 mx-5">
+    <div className="row mt-5 mt-md-0 mx-5" data-aos="fade-up">
     <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
         <img src={GD} alt="discover our story" className="img-fluid rounded-2" />
     </div>

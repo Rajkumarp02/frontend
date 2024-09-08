@@ -72,135 +72,30 @@ const Form = () => {
         setCourse(e.target.value)
     }
 
-    return (
-        <div className="container-fluid mt-5 mt-md-5">
+        return (
+            <div className="container-fluid mt-5 p-md-5">
             <div className="row justify-content-start">
-                <div className="col-12 col-md-12 col-lg-8 p-md-3 bg mt-3 rounded-4 mx-auto py-5">
-                    <form onSubmit={(e) => handleSubmit(e)} className=''>
-                        <div className="mb-3">
-                            <h5 className="text-start text-dark">Full Name</h5>
-                            <input
-                                name="name"
-                                type="text"
-                                placeholder="Enter Your Name"
-                                className="form-control"
-                                id='name'
-                                required
-                            />
-                        </div>
-                        <div className="mb-3">
-                            <h5 className="text-start text-dark">Email Address</h5>
-                            <input
-                                name="email"
-                                type="email"
-                                placeholder="Enter Your Email"
-                                className="form-control"
-                                id='email'
-                                required
-                            />
-                        </div>
-                        <div className="mb-3">
-                            <h5 className="text-start text-dark">Phone Number</h5>
-                            <input
-                                name="phone"
-                                type="tel"
-                                placeholder="Enter Your Phone Number"
-                                className="form-control"
-                                id='phone'
-                                required
-                            />
-                        </div>
-                        <div className="mb-3">
-                            <h5 className="text-start text-dark">Interested In :</h5>
-                            <div className="row">
-                                <div className="col-6">
-                                    <div className="form-check">
-                                        <input
-                                            className="form-check-input"
-                                            type="radio"
-                                            name="interest"
-                                            id="fullStack"
-                                            value='Full Stack Development'
-                                            onChange={handleCourseChange}
-                                        />
-                                        <label
-                                            className="form-check-label text-dark"
-                                            htmlFor="fullStack"
-                                        >
-                                            Full Stack Development
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-6">
-                                    <div className="form-check">
-                                        <input
-                                            className="form-check-input"
-                                            type="radio"
-                                            name="interest"
-                                            id="digitalMarketing"
-                                            value='Digital Marketing'
-                                            onChange={handleCourseChange}
-                                        />
-                                        <label
-                                            className="form-check-label text-dark"
-                                            htmlFor="digitalMarketing"
-                                        >
-                                            Digital Marketing
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-6 mt-2">
-                                    <div className="form-check">
-                                        <input
-                                            className="form-check-input"
-                                            type="radio"
-                                            name="interest"
-                                            id="uiUx"
-                                            value='UI/UX Designing'
-                                            onChange={handleCourseChange}
-                                        />
-                                        <label
-                                            className="form-check-label text-dark"
-                                            htmlFor="uiUx"
-                                        >
-                                            UI/UX Designing
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-6 mt-2">
-                                    <div className="form-check">
-                                        <input
-                                            className="form-check-input"
-                                            type="radio"
-                                            name="interest"
-                                            id="graphicDesign"
-                                            value='Graphic Designning'
-                                            onChange={handleCourseChange}
-                                        />
-                                        <label
-                                            className="form-check-label text-dark"
-                                            htmlFor="graphicDesign"
-                                        >
-                                            Graphic Designing
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex mt-5'>
-                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            <div className='mx-1'>
-                                <label className="form-check-label text-2 fs-5 mx-2 mx-md-2" for="flexCheckDefault" required>
-                                    I agree to the Terms and Conditions
-                                </label>
-                            </div>
-                        </div>
-                        <div className='text-center d-flex justify-content-center align-items-center mt-5'>
-                            <button className='btn rounded-3 px-2 py-2 text-dark border border-1' color='#70BF29' style={{
-                                background: "#70BF29"
-                            }}>Submit Now</button>
-                        </div>
-                    </form>
+                <div className="col-12 col-md-12  col-lg-8 p-md-3 bg mt-2 rounded-4 mx-auto py-5">
+                    <h2 className="text-center learn-head mb-4">Hurryep Technologies <br/> <span className='clasic'>"Learn With Us" </span>Program</h2>
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item d-flex bg-secondary justify-content-between align-items-center">
+                            Website and App Development
+                            <span className="badge bg-primary rounded-pill">New</span>
+                        </li>
+                        <li className="list-group-item d-flex bg-secondary justify-content-between align-items-center">
+                            Digital Marketing
+                            <span className="badge bg-primary rounded-pill">Popular</span>
+                        </li>
+                        <li className="list-group-item d-flex bg-secondary justify-content-between align-items-center">
+                            UI/UX Graphic Design
+                            <span className="badge bg-primary rounded-pill">Trending</span>
+                        </li>
+                    </ul>
+                    <p className="text-center mt-4 fw-bold fs-5">We also offer internship and placement opportunities.</p>
+                    <p className="text-center mt-3 fw-semibold" style={{color:"#70BF29"}}>#LearnWithUs #Hurryep #HurryepTech</p>
+                    <div className='text-center d-flex justify-content-center align-items-center'>
+                        <button className='button-64 px-2 py-3 fw-semibold fs-5'><a href='https://pages.razorpay.com/LearnWithUs' style={{textDecoration:"none",color:"whitesmoke"}}>Book Your Slot</a></button>
+                    </div>
                 </div>
             </div>
         </div>

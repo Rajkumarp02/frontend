@@ -13,7 +13,7 @@ const AboutUs  = () => {
             <h1 className="text-home text-dark fw-bold text-start">
             Elevating Businesses with Strategic Innovation
             </h1>
-            <div className="mt-2" style={{ color: "rgba(112, 191, 41, 1)"}}>
+            <div className="mt-2 mt-xl-5" style={{ color: "rgba(112, 191, 41, 1)"}}>
               <h4 className="fw-semibold text-abts text-start text-small fs-bold">Partnering with You to Drive Growth and Achieve Success</h4>
             </div>
             </div>

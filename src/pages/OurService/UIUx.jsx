@@ -2,7 +2,7 @@ import UI from "../../Assests/Ourservice/Ui Ux.png";
 import './OurService.css';
 const UIUx  = () => {
   return (
-    <div className="row mt-md-0 mt-5 mx-5">
+    <div className="row mt-md-0 mt-5 mx-5" data-aos="fade-up">
     <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
         <div>
             <h6 className="text-service text-md-start">UI/UX Designing</h6>

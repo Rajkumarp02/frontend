@@ -1,7 +1,7 @@
 import BDE from "../../Assests/Ourservice/BAS.png";
 const SocialMedia  = () => {
   return (
-    <div className="row  mt-5 mt-md-0 mx-5" id="sm">
+    <div className="row  mt-5 mt-md-0 mx-5" id="sm" data-aos="fade-up">
     <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
         <div>
             <h6 className="text-service text-md-start">Social Media Marketings</h6>

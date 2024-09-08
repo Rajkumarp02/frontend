@@ -5,7 +5,7 @@ import "../Home/Home.css";
 
 const AboutDiscover = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5" data-aos="fade-up">
       <div className="row d-flex justify-content-center align-items-stretch text-center text-md-start">
         <div className="col-md-6 col-12 mb-3 mb-md-0">
           <img src={About} alt="discover our story" className="img-fluid rounded h-100" />

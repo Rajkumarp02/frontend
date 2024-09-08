@@ -8,7 +8,11 @@ import linkedin from "../../Assests/footer/linkedin.png";
 import fb from "../../Assests/footer/fb.png";
 import insta from "../../Assests/footer/insta.png";
 import x from "../../Assests/footer/x.png";
-import learn from "../../Assests/footer/pic.png"
+import learn from "../../Assests/footer/pic.png";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -33,10 +37,10 @@ const Footer = () => {
             }}>AboutUs</Link></h6> */}
             <div className="w-100" style={{borderBottom:"1px solid #70BF29"}}></div>
             <div className="d-flex gap-2 justify-content-center mt-3 mb-3">
-            <a href="https://www.linkedin.com/company/hurryep-technologies/"><img src={linkedin} alt="" /></a>
-            <a href="https://www.facebook.com/HurryepTechnologies"><img src={fb} alt="" /></a> 
-            <a href="https://www.instagram.com/hurryep.tech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img src={insta} alt="" /></a> 
-            <a href="https://x.com/Hurryep"><img src={x} alt="" /></a>
+            <a href="https://www.linkedin.com/company/hurryep-technologies/"><IoLogoLinkedin size={40} color="white" className="social-media-icon"/></a>
+            <a href="https://www.facebook.com/HurryepTechnologies"><FaFacebookSquare size={40} color="white" className="social-media-icon"/></a> 
+            <a href="https://www.instagram.com/hurryep.tech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagramSquare size={40} color="white" className="social-media-icon" /></a> 
+            <a href="https://x.com/Hurryep"><FaSquareXTwitter size={40} color="white" className="social-media-icon" /></a>
             </div>
         </div>
         <div className="col-lg-2 line mt-5 mt-md-3 p-4 mt-lg-0 l">

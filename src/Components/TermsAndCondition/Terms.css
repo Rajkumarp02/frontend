@@ -18,3 +18,16 @@
     background-repeat: no-repeat;
     background-size:cover;
 }
+.s-bg{
+    background-image: url("../../Assests/Terms/t2.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.d-bg{
+    background-image: url("../../Assests/Terms/t3.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

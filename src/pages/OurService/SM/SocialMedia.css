@@ -1,0 +1,16 @@
+.bg-sm{
+    background: url("../../../Assests/sm/bg-sm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width : 768px) {
+    .bg-sm{
+        background: url("../../../Assests/sm/bg-sm.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -176,4 +176,17 @@
       height: 100%;
     }
   }
-   
+  .social-media-icon {
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.social-media-icon:hover {
+    transform:scale(1.4);
+    /* color: rgb(20,148,214) !important; */
+    background: radial-gradient(circle, #70BF29 10%, rgba(125,242,95,1) 8%, #70BF29 3%) !important;
+    border: none !important;
+    border-radius: 5px;
+}

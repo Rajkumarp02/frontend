@@ -2,7 +2,7 @@ import In from "../../Assests/Ourservice/IM.png";
 import './OurService.css';
 const Influence  = () => {
   return (
-    <div className="row mt-5 mt-md-0 mx-5">
+    <div className="row mt-5 mt-md-0 mx-5" data-aos="fade-up">
             <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
                 <div>
                     <h6 className="text-service text-md-start">Influencer Marketing</h6>

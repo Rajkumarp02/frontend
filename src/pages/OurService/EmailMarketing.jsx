@@ -2,7 +2,7 @@ import Email from "../../Assests/Ourservice/Email.png";
 import './OurService.css';
 const EmailMarketing  = () => {
   return (
-    <div className="row mt-5 mt-md-0 mx-5" id="em">
+    <div className="row mt-5 mt-md-0 mx-5" id="em" data-aos="fade-up">
     <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
         <img src={Email} alt="discover our story" className="img-fluid rounded-2" />
     </div>

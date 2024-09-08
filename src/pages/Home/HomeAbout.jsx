@@ -37,7 +37,7 @@ const HomeAbout = () => {
             <Link to="/aboutus" onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }}>
-              <button className="btn" style={{ borderRadius: "50px", color: "#70BF29", borderColor: "#70BF29", border: "2px solid", fontSize: "18px", fontWeight: "600" }}>Discover More</button>
+              <button className="btn btn-ab">Discover More</button>
             </Link>
           </div>
         </div>

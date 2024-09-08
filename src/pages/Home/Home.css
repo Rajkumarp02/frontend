@@ -28,7 +28,20 @@ body {
 .image-container img {
   border-radius: 10px;
 }
-
+.btn-ab{
+ border-radius:50px;
+color:#70BF29;
+border-color: #70BF29;
+border: 2px solid;
+font-size: "18px";
+font-weight: "600";
+}
+.btn-ab:hover{
+ color: #efefef;
+ border: 2px solid #70BF29 ;
+ background-color: #70BF29;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 @media (max-width: 1200px) {
   .slider-container {

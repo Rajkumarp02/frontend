@@ -1,0 +1,146 @@
+.bg-w{
+    background: url("../../../Assests/wp/wp.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-text{
+    font-family: "Poopins";
+    font-size: 18.20px;
+    font-weight: 500;
+    color: white;
+}
+
+.btn-start{
+    background-color: #75de24;
+    color: white;
+}
+.btn-start:hover{
+    background-color: whitesmoke;
+    color: #75de24;
+}
+.para-second{
+    color: white;
+    font-family: "Poppins";
+    font-weight: semibold;
+    font-size: 22px;
+}
+.b-se{
+    border:1px solid rgba(112, 191, 41, 0.05);
+    background-color: rgba(112, 191, 41, 0.05);
+}
+
+.wp-card-container {
+    border: 1px solid;
+    border-radius: 20px;
+    background: rgba(112, 191, 41, 0.1);
+    padding: 15px; 
+}
+.wp-card-box {
+    width: 100%; 
+    max-width: 300px; 
+    height: 362.56px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s; 
+}
+
+.wp-card-box:hover {
+    transform: translateY(-10px); 
+}
+
+.wp-card-box img {
+    width: 50px;
+    height: auto;
+}
+
+.wp-card-content {
+    padding: 15px;
+}
+
+.wp-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.wp-card-description {
+    text-align: start;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    font-family: "Poppins", sans-serif;
+}
+
+
+@media (max-width : 768px) {
+    .bg-w{
+        background: url("../../../Assests/wp/wp.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .para-second{
+        color: white;
+        font-family: "Poppins";
+        font-weight:400;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wp-card-box {
+        height: 380px;
+    }
+    .wp-card-title {
+        font-size: 1.15rem;
+    }
+    .wp-card-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 991px) {
+    .wp-card-box {
+        height: 260px;
+    }
+    .wp-card-title {
+        font-size: 1.1rem;
+    }
+    .wp-card-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wp-card-box {
+        height: 240px;
+    }
+    .wp-card-title {
+        font-size: 1.05rem;
+    }
+    .wp-card-description {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px) {
+    .wp-card-box {
+        height: 220px;
+    }
+    .wp-card-title {
+        font-size: 1rem;
+    }
+    .wp-card-description {
+        font-size: 10px;
+    }
+}
+

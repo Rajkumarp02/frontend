@@ -16,13 +16,14 @@ const Navbar = () => {
     const handleNavItemClick = (sectionId) => {
         setIsOpen(false);
         const element = document.getElementById(sectionId);
+    
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
             setActiveSection(sectionId);
         }
     };
     
-
+ 
     const handleDropdownToggle = () => {
         setDropdownOpen(!dropdownOpen);
     };
@@ -83,11 +84,12 @@ const Navbar = () => {
                                 >
                                     <a className="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
                                     <div className={`dropdown-menu ${subDropdownOpen ? 'show' : ''}`}>
-                                        <HashLink className="dropdown-item" to="/ourservice#seo" onClick={() => handleNavItemClick('seo')}>SEO</HashLink>
-                                        <HashLink className="dropdown-item" to="/ourservice#sm"  onClick={() => handleNavItemClick('socialMedia')}>Social Media</HashLink>
-                                        <HashLink className="dropdown-item" to="/ourservice#em"  onClick={() => handleNavItemClick('emailMarketing')}>Email Marketing</HashLink>
+                                        <NavLink className="dropdown-item" to="/seo-site">SEO</NavLink>
+                                        <NavLink className="dropdown-item" to="/social-media">Social Media</NavLink>
+                                        <NavLink className="dropdown-item" to="/google-ads">Google Ads</NavLink>
+                                        <HashLink className="dropdown-item" to="/email-marketing">Email Marketing</HashLink>
                                         <HashLink className="dropdown-item" to="/ourservice#ppc" onClick={() => handleNavItemClick('ppcCampaign')}>PPC Campaign</HashLink>
-                                        <HashLink className="dropdown-item" to="/ourservice#wp"  onClick={() => handleNavItemClick('whatsappMarketing')}>Whatsapp Marketing</HashLink>
+                                        <NavLink className="dropdown-item" to="/whatsapp-marketing">Whatsapp Marketing</NavLink>
                                     </div>
                                 </div>
                                 <NavLink className="dropdown-item" to="/action3" onClick={handleNavItemClick}>Web Development</NavLink>

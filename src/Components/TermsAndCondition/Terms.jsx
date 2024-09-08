@@ -92,14 +92,10 @@ const Terms  = () => {
 <div className="mt-5">
     <PrivacyPolicy/>
 </div>
-<div className="mt-5" style={{
-            border:"1px solid", borderRadius:"20px",background:"#444343"
-        }}>
+<div className="mt-5">
     <ShippingPolicy/>
 </div>
-<div className=""style={{
-            border:"1px solid", borderRadius:"20px",background:"rgba(112, 191, 41, 0.1)"
-        }}>
+<div className="mt-5">
     <Disclamier/>
 </div>
 <div className="mt-5">

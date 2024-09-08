@@ -7,7 +7,11 @@ import Vision from './pages/Aboutus/Vision';
 import Values from './pages/Aboutus/Values';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+// import CheckOut from './checkout/CheckOut.jsx';
+// import Main from './checkout/Main.jsx';
+// import Layout from './Demo/Layout.jsx';
+// import Home from './Demo/Home.jsx';
+// import MyStore from './Demo/MyStore.jsx';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const AboutUs = lazy(() => import('./pages/Aboutus/AboutUs'));
@@ -31,8 +35,14 @@ const Privacy = lazy(() => import('./Components/MainTerms/Privacy'));
 const Refund = lazy(() => import('./Components/MainTerms/Refund'));
 const DisClaimer = lazy(() => import('./Components/MainTerms/Disclaimer'));
 const SEO = lazy(()=> import('./pages/OurService/SEOService'));
+const SEOSite = lazy(()=> import('./pages/OurService/SEO/SEO.jsx'));
+const SM = lazy(()=> import('./pages/OurService/SM/SocialMedia.jsx'));
+const Google = lazy(()=> import('./pages/OurService/googleads/Google.jsx'));
+const Email = lazy(()=> import("./pages/OurService/EmailMarketing/Email.jsx"));
+const Wp = lazy(()=> import ("./pages/OurService/WhatsappMarketing/Whatsapp.jsx"));
 
 function App() {
+  
   useEffect(() => {
     AOS.init();
   }, []);
@@ -72,9 +82,22 @@ function App() {
             <Route path='/refund' element={<Suspense fallback={<div>Loading...</div>}><Refund /></Suspense>} />
             <Route path='/disclaimer' element={<Suspense fallback={<div>Loading...</div>}><DisClaimer /></Suspense>} />
             <Route path='/seo' element={<Suspense fallback={<div>Loading...</div>}><SEO /></Suspense>} />
+            <Route path='/seo-site' element={<Suspense fallback={<div>Loading...</div>}><SEOSite /></Suspense>} />
+            <Route path='/social-media' element={<Suspense fallback={<div>Loading...</div>}><SM /></Suspense>} />
+            <Route path='/google-ads' element={<Suspense fallback={<div>Loading...</div>}><Google/></Suspense>} />
+            <Route path='/email-marketing' element={<Suspense fallback={<div>Loading...</div>}><Email/></Suspense>} />
+            <Route path='/whatsapp-marketing' element={<Suspense fallback={<div>Loading...</div>}><Wp/></Suspense>} />
+            
           </Route>
+          {/* <Route path='/Checkout' element={<Suspense fallback={<div>Loading...</div>}><Main/></Suspense>} />
+
+          <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>} />
+          <Route path='/my-store' element={<MyStore/>} />
+        </Route> */}
         </Routes>
       </Router>
+
     </div>
   );
 }

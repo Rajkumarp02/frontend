@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+}
+
+.bg-s{
+    background: url("../../../Assests/Ourservice/seo-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seo-head{
+    font-family:"Poppins";
+    font-weight:bolder;
+    font-size: 40px;
+    color: white;
+}
+
+.seo-text{
+    font-family:"Poppins";
+    font-weight:bold;
+    font-size: 28px;
+    color:#75de24; 
+}
+.h-seo{
+    background-color:rgb(235, 238, 239);
+    height: 100%;
+}
+.h-seo:hover{
+    background-color: #75de24;
+    cursor: pointer;
+}
+.seo-para{
+    font-family:"Poppins";
+    font-weight:lighter;
+    font-size: 18px;
+    color:#dee0dc; 
+}
+.hyp{
+    font-size: 26px;
+    font-weight: bold;
+    font-family:"Poppins";
+}
+.hyp-para{
+    font-size: 14px;
+    font-weight:lighter;
+    font-family:"Poppins";
+    color: rgb(161, 158, 158);
+}
+.hyp-process{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    font-family:"Poppins";
+}
+.b-text{
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    font-family:"Poppins";
+}
+@media (max-width : 768px) {
+    .bg-s{
+        background: url("../../../Assests/Ourservice/seo-bg.jpg");
+        background-position:unset;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .seo-head{
+        font-family:"Poppins";
+        font-weight:bolder;
+        font-size: 20px;
+        color: white;
+    }
+    .seo-text{
+        font-family:"Poppins";
+        font-weight:bold;
+        font-size: 18px;
+        color:#75de24; 
+    }
+    .hyp{
+        font-size: 16px;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+    .hyp-para{
+        font-size: 10px;
+        font-weight:lighter;
+        font-family:"Poppins";
+        color: rgba(102, 102, 102, 1);
+    }
+    .hyp-process{
+        font-weight: bold;
+        font-size: 13px;
+        color: white;
+        font-family:"Poppins";
+    }
+    .b-text{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        font-family:"Poppins";
+    }
+}
